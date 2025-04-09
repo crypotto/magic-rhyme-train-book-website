@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Book, BookOpen } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -15,15 +15,13 @@ const Hero = () => {
           {/* Book Cover & Train */}
           <div className="md:w-1/2 relative mb-10 md:mb-0">
             <div className="max-w-md mx-auto relative">
-              {/* Book Cover Placeholder - Replace with actual book cover */}
-              <div className="bg-white rounded-lg shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-300 p-1">
-                <div className="bg-rhyme-purple rounded-lg aspect-[3/4] flex items-center justify-center p-6">
-                  <div className="text-center text-white">
-                    <h2 className="text-3xl font-bold mb-4">The Magic Rhyme Train</h2>
-                    <p className="text-xl mb-2">A Children's Book</p>
-                    <Book className="w-16 h-16 mx-auto" />
-                  </div>
-                </div>
+              {/* Real Book Cover */}
+              <div className="transform rotate-3 hover:rotate-0 transition-transform duration-300 shadow-xl rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/5d61fc6b-9ec3-4d50-8ea8-42996be051c4.png" 
+                  alt="The Magic Rhyme Train Book Cover" 
+                  className="w-full h-auto object-cover"
+                />
               </div>
               
               {/* Animated Train */}
@@ -41,9 +39,9 @@ const Hero = () => {
           {/* Hero Content */}
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-              <span className="text-rhyme-purple">Hop on the Magic Rhyme Train</span>
+              <span className="text-rhyme-purple">The Magic Rhyme Train</span>
             </h1>
-            <p className="text-xl sm:text-2xl mb-8">40 Rhymes, 40 Adventures!</p>
+            <p className="text-xl sm:text-2xl mb-4 text-yellow-400 font-bold">All Aboard for a Journey Through Giggles and Tunes!</p>
             <p className="text-lg mb-8 max-w-lg mx-auto md:mx-0">
               Join us on a whimsical journey through magical lands, meeting curious characters, and learning playful rhymes along the way.
             </p>
