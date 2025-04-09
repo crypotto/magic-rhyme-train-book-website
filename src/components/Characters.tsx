@@ -9,8 +9,7 @@ const Characters = () => {
       name: "Magic Rhyme Train",
       description: "The cheerful train engine that takes everyone on a magical journey through 40 rhyming stations",
       color: "bg-rhyme-purple",
-      icon: <Train className="h-12 w-12 text-white" />,
-      image: "/lovable-uploads/948bf926-4d31-40da-970a-faf3608a516b.png" // Using the book cover image
+      icon: <Train className="h-12 w-12 text-white" />
     },
     {
       name: "Ellie the Elephant",
@@ -66,17 +65,9 @@ const Characters = () => {
             <div key={index} className="transform transition-all duration-300 hover:scale-105 hover:-rotate-2">
               <Card className="overflow-hidden h-full border-2 border-white shadow-lg">
                 <div className={`${character.color} h-48 flex items-center justify-center p-6`}>
-                  {character.image ? (
-                    <img 
-                      src={character.image} 
-                      alt={character.name} 
-                      className="w-32 h-32 object-contain rounded-full bg-white/30 p-2"
-                    />
-                  ) : (
-                    <div className="w-24 h-24 bg-white/30 rounded-full flex items-center justify-center">
-                      {character.icon}
-                    </div>
-                  )}
+                  <div className="w-24 h-24 bg-white/30 rounded-full flex items-center justify-center">
+                    {character.icon}
+                  </div>
                 </div>
                 
                 <div className="p-6">
