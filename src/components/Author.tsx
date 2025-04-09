@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card } from '@/components/ui/card';
+import { Book, Star } from 'lucide-react';
 
 const Author = () => {
   return (
@@ -28,7 +29,7 @@ const Author = () => {
                   </p>
                   
                   <p className="leading-relaxed">
-                    With a passion for storytelling and a love for whimsy, Kislay created "The Magic Rhyme Train" to take young readers on an unforgettable journey through imaginative worlds where learning and fun go hand in hand.
+                    With a passion for storytelling and a love for whimsy, Kislay created "The Magic Rhyme Train" to take young readers on an unforgettable journey through 40 imaginative destinations where learning and fun go hand in hand.
                   </p>
                   
                   <p className="leading-relaxed">
@@ -39,8 +40,16 @@ const Author = () => {
                 <div className="mt-6">
                   <h4 className="font-fredoka text-lg mb-2">A Note from the Author:</h4>
                   <blockquote className="pl-4 border-l-4 border-rhyme-purple italic">
-                    "I believe every child deserves stories that spark joy and imagination. My hope is that 'The Magic Rhyme Train' becomes a cherished part of your family's reading journey."
+                    "I believe every child deserves stories that spark joy and imagination. Each page of 'The Magic Rhyme Train' was written with wonder, giggles, and sleepytime snuggles in mind. Keep dreaming, keep rhyming, and always stay curious."
                   </blockquote>
+                </div>
+                
+                <div className="flex items-center mt-6 text-yellow-500">
+                  <Star className="fill-current" />
+                  <Star className="fill-current" />
+                  <Star className="fill-current" />
+                  <Star className="fill-current" />
+                  <Star className="fill-current" />
                 </div>
               </div>
             </div>

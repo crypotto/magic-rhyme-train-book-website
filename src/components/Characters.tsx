@@ -1,82 +1,59 @@
 
 import React from 'react';
 import { Card } from '@/components/ui/card';
+import { Train, Elephant, Frog, CloudMoon, Dragon, Music, Unicorn } from 'lucide-react';
 
 const Characters = () => {
   const characters = [
     {
       name: "Magic Rhyme Train",
-      description: "The cheerful train engine that takes everyone on a magical journey through rhyming stations",
+      description: "The cheerful train engine that takes everyone on a magical journey through 40 rhyming stations",
       color: "bg-rhyme-purple",
-      image: "train"
+      icon: <Train className="h-12 w-12 text-white" />
     },
     {
       name: "Ellie the Elephant",
-      description: "A gentle elephant who loves dancing to rhymes and making new friends at every station",
+      description: "A gentle elephant who loves dancing to rhymes in the Jungle Jamboree and making new friends at every station",
       color: "bg-rhyme-blue",
-      image: "elephant"
+      icon: <Elephant className="h-12 w-12 text-white" />
     },
     {
       name: "Freddie the Frog",
-      description: "A jumpy frog who wears red boots and loves to collect colorful jellybeans from Jelly Bean Jungle",
+      description: "A jumpy frog who wears red boots and tells wobbly jokes that make even the owls croak in The Forest of Giggles",
       color: "bg-rhyme-green",
-      image: "frog"
+      icon: <Frog className="h-12 w-12 text-white" />
     },
     {
-      name: "Ollie the Owl",
-      description: "A wise owl who watches over everyone and remembers all the rhymes from each magical stop",
+      name: "The Queen of Clouds",
+      description: "She lives in The Cloud Castle and paints the sky from morning to night, creating rainbow slides instead of streets",
       color: "bg-rhyme-peach",
-      image: "owl"
+      icon: <CloudMoon className="h-12 w-12 text-white" />
+    },
+    {
+      name: "The Friendly Dragon",
+      description: "Lives in Dragon Hollow where dragons rhyme and breathe out flames shaped like hearts while toasting marshmallows",
+      color: "bg-rhyme-red",
+      icon: <Dragon className="h-12 w-12 text-white" />
+    },
+    {
+      name: "Jungle Musicians",
+      description: "Animals who dance and play in perfect time during the Jungle Jamboree - from tiger's bongo beat to lion's roar",
+      color: "bg-rhyme-orange",
+      icon: <Music className="h-12 w-12 text-white" />
+    },
+    {
+      name: "Unicorns of the Meadow",
+      description: "They prance in silver streams with manes aglow with moonbeam dreams, leaping through clouds and sipping star-tea",
+      color: "bg-rhyme-pink",
+      icon: <Unicorn className="h-12 w-12 text-white" />
+    },
+    {
+      name: "The Sleepytime Teddy",
+      description: "Waves with drowsy eyes at The Sleepytime Station where lullabies are everywhere and blankets float through the air",
+      color: "bg-rhyme-yellow",
+      icon: <CloudMoon className="h-12 w-12 text-white" />
     },
   ];
-  
-  // Character images based on book cover
-  const getCharacterElement = (character) => {
-    switch(character.image) {
-      case 'train':
-        return <div className="w-24 h-24 rounded-full bg-rhyme-orange flex items-center justify-center">
-          <div className="w-16 h-16 bg-rhyme-red rounded-lg relative">
-            <div className="absolute -top-3 w-6 h-6 left-1/2 transform -translate-x-1/2 bg-rhyme-yellow rounded-full"></div>
-            <div className="absolute bottom-1 left-1 w-3 h-3 bg-black rounded-full"></div>
-            <div className="absolute bottom-1 right-1 w-3 h-3 bg-black rounded-full"></div>
-          </div>
-        </div>;
-      case 'elephant':
-        return <div className="w-24 h-24 rounded-full bg-gray-300 flex items-center justify-center">
-          <div className="w-14 h-14 bg-gray-400 rounded-full relative">
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-4 bg-gray-400 rounded-full"></div>
-          </div>
-        </div>;
-      case 'frog':
-        return <div className="w-24 h-24 rounded-full bg-green-400 flex items-center justify-center">
-          <div className="w-16 h-10 bg-green-500 rounded-full relative">
-            <div className="absolute -top-4 left-2 w-4 h-4 bg-white rounded-full">
-              <div className="absolute top-1 left-1 w-2 h-2 bg-black rounded-full"></div>
-            </div>
-            <div className="absolute -top-4 right-2 w-4 h-4 bg-white rounded-full">
-              <div className="absolute top-1 left-1 w-2 h-2 bg-black rounded-full"></div>
-            </div>
-            <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-10 h-2 bg-red-500 rounded-full"></div>
-          </div>
-        </div>;
-      case 'owl':
-        return <div className="w-24 h-24 rounded-full bg-amber-200 flex items-center justify-center">
-          <div className="w-16 h-16 bg-amber-400 rounded-full relative">
-            <div className="absolute top-3 left-2 w-4 h-4 bg-white rounded-full">
-              <div className="absolute top-1 left-1 w-2 h-2 bg-black rounded-full"></div>
-            </div>
-            <div className="absolute top-3 right-2 w-4 h-4 bg-white rounded-full">
-              <div className="absolute top-1 left-1 w-2 h-2 bg-black rounded-full"></div>
-            </div>
-            <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-4 h-2 bg-orange-500 rounded-full"></div>
-          </div>
-        </div>;
-      default:
-        return <div className="w-24 h-24 bg-white/30 rounded-full flex items-center justify-center">
-          <span className="text-4xl">{character.name.charAt(0)}</span>
-        </div>;
-    }
-  };
   
   return (
     <section id="characters" className="py-20 rainbow-gradient">
@@ -88,7 +65,9 @@ const Characters = () => {
             <div key={index} className="transform transition-all duration-300 hover:scale-105 hover:-rotate-2">
               <Card className="overflow-hidden h-full border-2 border-white shadow-lg">
                 <div className={`${character.color} h-48 flex items-center justify-center p-6`}>
-                  {getCharacterElement(character)}
+                  <div className="w-24 h-24 bg-white/30 rounded-full flex items-center justify-center">
+                    {character.icon}
+                  </div>
                 </div>
                 
                 <div className="p-6">
@@ -102,7 +81,7 @@ const Characters = () => {
         
         <div className="mt-12 text-center">
           <p className="text-lg mb-6">
-            Follow these delightful characters on their rhyming adventure through magical lands!
+            Follow these delightful characters on their rhyming adventure through 40 magical lands!
           </p>
         </div>
 
@@ -118,11 +97,9 @@ const Characters = () => {
             <div className="md:w-2/3">
               <h3 className="font-fredoka text-2xl mb-3 text-rhyme-purple">About the Journey</h3>
               <p className="mb-4">
-                Climb aboard The Magic Rhyme Train, where every stop brings a new adventure to life with 
-                playful rhymes and enchanting scenes! This whimsical picture book invites young readers 
-                on a delightful journey through 40 fantastical locations.
+                Climb aboard The Magic Rhyme Train as it chugs through 40 fantastical destinations! From Candy Canyon to Dragon Hollow, from Jungle Jamboree to The Sleepytime Station, this whimsical picture book invites young readers on a delightful journey filled with playful rhymes and enchanting scenes.
               </p>
-              <p className="text-sm text-gray-600">ISBN: 978-1-7345-6789-0</p>
+              <p className="text-sm text-gray-600">Available on Amazon in Paperback and Kindle formats</p>
             </div>
           </div>
         </div>

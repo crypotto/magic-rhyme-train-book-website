@@ -1,26 +1,41 @@
 
 import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Train, Star, Candy, MountainSnow, Rocket, CloudSun } from 'lucide-react';
 
 const SamplePages = () => {
   const [currentPage, setCurrentPage] = useState(0);
   
   const pages = [
     {
-      station: "Crystal Confetti Station",
-      rhyme: "At Crystal Confetti Station, so sparkly and bright,\nWe toss rainbow flecks that twinkle with light.\nThey flutter and fall like snowflakes of hue,\nAnd coat our train cars with a glittery view!",
-      color: "bg-gradient-to-br from-purple-100 to-blue-100"
+      station: "All Aboard the Magic Train!",
+      rhyme: "All aboard! It's time to go,\nTo lands of laughter, sun, and snow!\nWith choo-choo cheer and wheels that sing,\nWe're off to see what rhymes will bring!\nHop inside and find your seat,\nA rhyming treat is hard to beat!\nFrom silly songs to starry skies,\nThis magic train is full of surprises!",
+      color: "bg-gradient-to-br from-purple-100 to-blue-100",
+      icon: <Train className="h-8 w-8 text-rhyme-purple" />
     },
     {
-      station: "Bubble Bath Bay",
-      rhyme: "In Bubble Bath Bay, we float and we play,\nOn mountains of bubbles throughout the day.\nThey pop and they fizz, they tickle our nose,\nAs soft soapy rainbows arch overhead in rows!",
-      color: "bg-gradient-to-br from-blue-100 to-purple-100"
+      station: "Candy Canyon",
+      rhyme: "Down in the valley of Candy Canyon,\nLollipops grow in a rainbow companion.\nGumdrops giggle and jellybeans hop,\nWhile peppermint trees go plip-plop-plop!\nThe chocolate river flows with cheer,\nCarrying marshmallow boats far and near.\nCotton candy clouds float up so high,\nAs cookie birds flutter through frosting sky.",
+      color: "bg-gradient-to-br from-pink-100 to-orange-100",
+      icon: <Candy className="h-8 w-8 text-rhyme-red" />
     },
     {
-      station: "Jelly Bean Jungle",
-      rhyme: "In Jelly Bean Jungle, the flavors abound,\nWith bean-shaped delights just waiting to be found.\nGreen apple, grape, cherry, and more,\nWe stuff all our pockets and still find some more!",
-      color: "bg-gradient-to-br from-green-100 to-yellow-100"
+      station: "Magic Hat Mountain",
+      rhyme: "Climb up high to Hat Mountain's peak,\nWhere hats can talk and rabbits sneak.\nA wizard waves his rhyming wand,\nAnd out jumps sparkles from a magic pond!\nTop hats twirl with doves inside,\nFezzes float and bowler hats glide.\nSpells and giggles fill the air,\nWith a poof of rhyme just everywhere!",
+      color: "bg-gradient-to-br from-blue-100 to-purple-100",
+      icon: <MountainSnow className="h-8 w-8 text-rhyme-blue" />
+    },
+    {
+      station: "Rocket Ramp",
+      rhyme: "We zoomed up high from Rocket Ramp,\nWhere rockets blast and stars go blamp!\nEngines roar with a rhyming beat,\nWhile astronauts bounce on moon-made street.\nThe countdown starts with "Ten, Nine, Eight!"\nAliens cheer behind the gate.\nWith "Three, Two, One!" the rocket flies,\nAnd poems swirl across the skies!",
+      color: "bg-gradient-to-br from-blue-100 to-green-100",
+      icon: <Rocket className="h-8 w-8 text-rhyme-orange" />
+    },
+    {
+      station: "The Cloud Castle",
+      rhyme: "We puffed through skies so soft and wide,\nWhere marshmallow clouds begin to glide.\nUp above where dream birds fly,\nWe found a castle in the sky!\nIts towers twirled like cotton treats,\nWith rainbow slides instead of streets.\nThe Queen of Clouds waved with delight,\nShe paints the sky from morning to night!",
+      color: "bg-gradient-to-br from-blue-50 to-purple-50",
+      icon: <CloudSun className="h-8 w-8 text-rhyme-blue" />
     },
   ];
   
@@ -41,6 +56,10 @@ const SamplePages = () => {
           {/* Main Card */}
           <Card className={`${pages[currentPage].color} p-8 rounded-xl shadow-lg border-2 border-rhyme-purple/20 aspect-[4/3] flex items-center justify-center transition-all duration-300`}>
             <div className="text-center max-w-md mx-auto">
+              <div className="flex justify-center mb-4">
+                {pages[currentPage].icon}
+              </div>
+              
               <h3 className="font-fredoka text-3xl mb-4 text-rhyme-purple">
                 {pages[currentPage].station}
               </h3>
@@ -92,7 +111,7 @@ const SamplePages = () => {
         </div>
         
         <div className="text-center mt-10">
-          <p className="text-lg mb-6">Want to see more magical destinations?</p>
+          <p className="text-lg mb-6">Want to see all 40 magical destinations?</p>
           <a href="#buy" className="btn-primary inline-flex">Get Your Copy Today</a>
         </div>
       </div>
