@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
           
           <div className="mt-2 text-sm opacity-75">
-            &copy; {new Date().getFullYear()} Magic Rhyme Train. All rights reserved.
+            &copy; {new Date().getFullYear()} Magic Rhyme Train by Kislay Chandra. All rights reserved.
           </div>
         </div>
       </div>

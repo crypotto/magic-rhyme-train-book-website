@@ -14,25 +14,25 @@ const Author = () => {
               {/* Author Image Placeholder */}
               <div className="md:w-1/3 bg-rhyme-purple p-8 flex items-center justify-center">
                 <div className="w-40 h-40 bg-white/30 rounded-full flex items-center justify-center">
-                  <span className="text-5xl text-white font-fredoka">A</span>
+                  <span className="text-5xl text-white font-fredoka">K</span>
                 </div>
               </div>
               
               {/* Author Bio */}
               <div className="md:w-2/3 p-8">
-                <h3 className="font-fredoka text-2xl mb-4 text-rhyme-purple">Author Name</h3>
+                <h3 className="font-fredoka text-2xl mb-4 text-rhyme-purple">Kislay Chandra</h3>
                 
                 <div className="space-y-4">
                   <p className="leading-relaxed">
-                    Author Name is a children's book author who believes in the power of rhyme and rhythm to captivate young minds and foster a love of reading from an early age.
+                    Kislay Chandra is a children's book author who believes in the power of rhyme and rhythm to captivate young minds and foster a love of reading from an early age.
                   </p>
                   
                   <p className="leading-relaxed">
-                    With a background in early childhood education, they understand how important engaging stories are for children's development. "The Magic Rhyme Train" was born from countless bedtime stories told to their own children, where adventures on an imaginary train became a nightly request.
+                    With a passion for storytelling and a love for whimsy, Kislay created "The Magic Rhyme Train" to take young readers on an unforgettable journey through imaginative worlds where learning and fun go hand in hand.
                   </p>
                   
                   <p className="leading-relaxed">
-                    When not writing, Author Name can be found collecting inspiration from their travels, visiting schools for interactive readings, and of course, making up new rhymes with young readers.
+                    When not writing, Kislay can be found collecting inspiration from travels, visiting schools for interactive readings, and of course, making up new rhymes with young readers.
                   </p>
                 </div>
                 

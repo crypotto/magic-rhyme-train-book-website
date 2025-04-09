@@ -53,14 +53,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Custom theme colors for Rhyme Train
+				// Custom theme colors updated to match book cover
 				rhyme: {
-					purple: '#9b87f5',
+					purple: '#6d5cb5',  // Deeper purple from cover
 					blue: '#D3E4FD',
 					pink: '#FFDEE2',
 					peach: '#FDE1D3',
 					yellow: '#FFF9C4',
-					green: '#DCEDC8'
+					green: '#DCEDC8',
+					red: '#FF8A80',    // For accents from the cover
+					orange: '#FFAB91'  // For accents from the cover
 				}
 			},
 			borderRadius: {

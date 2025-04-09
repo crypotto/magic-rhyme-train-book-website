@@ -8,19 +8,19 @@ const SamplePages = () => {
   
   const pages = [
     {
-      station: "Candy Cane Station",
-      rhyme: "At Candy Cane Station, so sweet and so bright,\nThe peppermint twirls fill us with delight.\nRed stripes and white swirls as far as we see,\nThe tastiest place you ever could be!",
-      color: "bg-gradient-to-br from-red-100 to-white"
+      station: "Crystal Confetti Station",
+      rhyme: "At Crystal Confetti Station, so sparkly and bright,\nWe toss rainbow flecks that twinkle with light.\nThey flutter and fall like snowflakes of hue,\nAnd coat our train cars with a glittery view!",
+      color: "bg-gradient-to-br from-purple-100 to-blue-100"
     },
     {
       station: "Bubble Bath Bay",
-      rhyme: "In Bubble Bath Bay, we float and we play,\nOn mountains of bubbles throughout the day.\nThey pop and they fizz, they tickle our nose,\nAs soft soapy rainbows arch their rainbows!",
+      rhyme: "In Bubble Bath Bay, we float and we play,\nOn mountains of bubbles throughout the day.\nThey pop and they fizz, they tickle our nose,\nAs soft soapy rainbows arch overhead in rows!",
       color: "bg-gradient-to-br from-blue-100 to-purple-100"
     },
     {
-      station: "Rainbow Reef",
-      rhyme: "At Rainbow Reef Station, colors abound,\nWith fish of all patterns swimming around.\nThey shimmer and glimmer beneath azure seas,\nAnd dance with the currents with elegant ease!",
-      color: "bg-gradient-to-br from-cyan-100 to-emerald-100"
+      station: "Jelly Bean Jungle",
+      rhyme: "In Jelly Bean Jungle, the flavors abound,\nWith bean-shaped delights just waiting to be found.\nGreen apple, grape, cherry, and more,\nWe stuff all our pockets and still find some more!",
+      color: "bg-gradient-to-br from-green-100 to-yellow-100"
     },
   ];
   

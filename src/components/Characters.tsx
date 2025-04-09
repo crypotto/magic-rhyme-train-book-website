@@ -5,26 +5,26 @@ import { Card } from '@/components/ui/card';
 const Characters = () => {
   const characters = [
     {
-      name: "Friendly Train",
-      description: "The cheerful train engine that takes everyone on a magical journey",
+      name: "Magic Rhyme Train",
+      description: "The cheerful train engine that takes everyone on a magical journey through rhyming stations",
       color: "bg-rhyme-purple",
       image: "train"
     },
     {
       name: "Ellie the Elephant",
-      description: "A gentle elephant who loves adventures and making new friends",
+      description: "A gentle elephant who loves dancing to rhymes and making new friends at every station",
       color: "bg-rhyme-blue",
       image: "elephant"
     },
     {
       name: "Freddie the Frog",
-      description: "A jumpy frog who wears red boots and has the biggest smile",
+      description: "A jumpy frog who wears red boots and loves to collect colorful jellybeans from Jelly Bean Jungle",
       color: "bg-rhyme-green",
       image: "frog"
     },
     {
       name: "Ollie the Owl",
-      description: "A wise owl who watches over everyone from above",
+      description: "A wise owl who watches over everyone and remembers all the rhymes from each magical stop",
       color: "bg-rhyme-peach",
       image: "owl"
     },
@@ -34,9 +34,9 @@ const Characters = () => {
   const getCharacterElement = (character) => {
     switch(character.image) {
       case 'train':
-        return <div className="w-24 h-24 rounded-full bg-yellow-400 flex items-center justify-center">
-          <div className="w-16 h-16 bg-red-500 rounded-lg relative">
-            <div className="absolute -top-3 w-6 h-6 left-1/2 transform -translate-x-1/2 bg-yellow-500 rounded-full"></div>
+        return <div className="w-24 h-24 rounded-full bg-rhyme-orange flex items-center justify-center">
+          <div className="w-16 h-16 bg-rhyme-red rounded-lg relative">
+            <div className="absolute -top-3 w-6 h-6 left-1/2 transform -translate-x-1/2 bg-rhyme-yellow rounded-full"></div>
             <div className="absolute bottom-1 left-1 w-3 h-3 bg-black rounded-full"></div>
             <div className="absolute bottom-1 right-1 w-3 h-3 bg-black rounded-full"></div>
           </div>
@@ -120,7 +120,7 @@ const Characters = () => {
               <p className="mb-4">
                 Climb aboard The Magic Rhyme Train, where every stop brings a new adventure to life with 
                 playful rhymes and enchanting scenes! This whimsical picture book invites young readers 
-                on a delightful journey through fantastical locations.
+                on a delightful journey through 40 fantastical locations.
               </p>
               <p className="text-sm text-gray-600">ISBN: 978-1-7345-6789-0</p>
             </div>

@@ -7,9 +7,9 @@ const Hero = () => {
     <section className="py-16 bg-gradient-to-br from-rhyme-blue via-rhyme-purple/10 to-rhyme-pink overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Decorative Elements */}
-        <div className="absolute top-0 left-10 w-20 h-20 bg-rhyme-yellow rounded-full opacity-40 animate-float"></div>
+        <div className="absolute top-0 left-10 w-20 h-20 bg-rhyme-orange rounded-full opacity-40 animate-float"></div>
         <div className="absolute bottom-10 right-10 w-16 h-16 bg-rhyme-green rounded-full opacity-40 animate-float" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-40 right-20 w-12 h-12 bg-rhyme-peach rounded-full opacity-40 animate-float" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-40 right-20 w-12 h-12 bg-rhyme-red rounded-full opacity-40 animate-float" style={{ animationDelay: '1.5s' }}></div>
         
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Book Cover & Train */}
@@ -41,7 +41,7 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
               <span className="text-rhyme-purple">The Magic Rhyme Train</span>
             </h1>
-            <p className="text-xl sm:text-2xl mb-4 text-yellow-400 font-bold">All Aboard for a Journey Through Giggles and Tunes!</p>
+            <p className="text-xl sm:text-2xl mb-4 text-rhyme-orange font-bold">All Aboard for a Journey Through Giggles and Tunes!</p>
             <p className="text-lg mb-8 max-w-lg mx-auto md:mx-0">
               Join us on a whimsical journey through magical lands, meeting curious characters, and learning playful rhymes along the way.
             </p>

@@ -28,9 +28,10 @@ const Header = () => {
             <a href="#contact" className="font-fredoka text-lg hover:text-rhyme-purple transition-colors">Contact</a>
           </nav>
           
-          <Button href="#buy" className="hidden md:flex btn-primary">
+          {/* Fix: Replace Button with a tag for "Buy Now" */}
+          <a href="#buy" className="hidden md:flex btn-primary">
             Buy Now
-          </Button>
+          </a>
           
           {/* Mobile Menu Button */}
           <button 
