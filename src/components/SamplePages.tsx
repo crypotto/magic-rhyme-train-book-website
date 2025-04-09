@@ -27,7 +27,7 @@ const SamplePages = () => {
     },
     {
       station: "Rocket Ramp",
-      rhyme: "We zoomed up high from Rocket Ramp,\nWhere rockets blast and stars go blamp!\nEngines roar with a rhyming beat,\nWhile astronauts bounce on moon-made street.\nThe countdown starts with "Ten, Nine, Eight!"\nAliens cheer behind the gate.\nWith "Three, Two, One!" the rocket flies,\nAnd poems swirl across the skies!",
+      rhyme: "We zoomed up high from Rocket Ramp,\nWhere rockets blast and stars go blamp!\nEngines roar with a rhyming beat,\nWhile astronauts bounce on moon-made street.\nThe countdown starts with \"Ten, Nine, Eight!\"\nAliens cheer behind the gate.\nWith \"Three, Two, One!\" the rocket flies,\nAnd poems swirl across the skies!",
       color: "bg-gradient-to-br from-blue-100 to-green-100",
       icon: <Rocket className="h-8 w-8 text-rhyme-orange" />
     },
