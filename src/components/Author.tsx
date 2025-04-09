@@ -12,11 +12,13 @@ const Author = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="border-0 shadow-lg overflow-hidden">
             <div className="flex flex-col md:flex-row">
-              {/* Author Image Placeholder */}
+              {/* Author Image */}
               <div className="md:w-1/3 bg-rhyme-purple p-8 flex items-center justify-center">
-                <div className="w-40 h-40 bg-white/30 rounded-full flex items-center justify-center">
-                  <span className="text-5xl text-white font-fredoka">K</span>
-                </div>
+                <img 
+                  src="/lovable-uploads/cfad3605-d0f3-4fc0-8e77-f2b224af0944.png" 
+                  alt="Kislay Chandra" 
+                  className="w-40 h-40 object-cover rounded-full border-4 border-white/50 shadow-lg"
+                />
               </div>
               
               {/* Author Bio */}
