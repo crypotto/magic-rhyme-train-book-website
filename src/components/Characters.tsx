@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import { Train, Elephant, Frog, CloudMoon, Dragon, Music, Unicorn } from 'lucide-react';
+import { Train, Cat, Fish, CloudMoon, Flame, Music, Sparkles, BedDouble } from 'lucide-react';
 
 const Characters = () => {
   const characters = [
@@ -15,13 +15,13 @@ const Characters = () => {
       name: "Ellie the Elephant",
       description: "A gentle elephant who loves dancing to rhymes in the Jungle Jamboree and making new friends at every station",
       color: "bg-rhyme-blue",
-      icon: <Elephant className="h-12 w-12 text-white" />
+      icon: <Cat className="h-12 w-12 text-white" /> // Changed from Elephant to Cat
     },
     {
       name: "Freddie the Frog",
       description: "A jumpy frog who wears red boots and tells wobbly jokes that make even the owls croak in The Forest of Giggles",
       color: "bg-rhyme-green",
-      icon: <Frog className="h-12 w-12 text-white" />
+      icon: <Fish className="h-12 w-12 text-white" /> // Changed from Frog to Fish
     },
     {
       name: "The Queen of Clouds",
@@ -33,7 +33,7 @@ const Characters = () => {
       name: "The Friendly Dragon",
       description: "Lives in Dragon Hollow where dragons rhyme and breathe out flames shaped like hearts while toasting marshmallows",
       color: "bg-rhyme-red",
-      icon: <Dragon className="h-12 w-12 text-white" />
+      icon: <Flame className="h-12 w-12 text-white" /> // Changed from Dragon to Flame
     },
     {
       name: "Jungle Musicians",
@@ -45,13 +45,13 @@ const Characters = () => {
       name: "Unicorns of the Meadow",
       description: "They prance in silver streams with manes aglow with moonbeam dreams, leaping through clouds and sipping star-tea",
       color: "bg-rhyme-pink",
-      icon: <Unicorn className="h-12 w-12 text-white" />
+      icon: <Sparkles className="h-12 w-12 text-white" /> // Changed from Unicorn to Sparkles
     },
     {
       name: "The Sleepytime Teddy",
       description: "Waves with drowsy eyes at The Sleepytime Station where lullabies are everywhere and blankets float through the air",
       color: "bg-rhyme-yellow",
-      icon: <CloudMoon className="h-12 w-12 text-white" />
+      icon: <BedDouble className="h-12 w-12 text-white" /> // Changed from CloudMoon to BedDouble for variety
     },
   ];
   
